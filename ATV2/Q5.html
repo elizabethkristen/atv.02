@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let pA = prompt("Digite aqui a quantidade de habitantes da população A: ");
+    let pB = prompt("Digite aqui a quantidade de habitantes da população B: ");
+    let taxaA = prompt("Digite aqui o percentual de crescimento da população A: ");
+    let taxaB = prompt("Digite aqui o percentual de crescimento da população B: ");
+    let anos = 0;
+
+    while (pA < pB) {
+    pA *= (1 + taxaA);
+    pB *= (1 + taxaB);
+    anos++;
+}
+    alert(`Vão ser necessários ${anos} anos para que a população do país A ultrapasse ou iguale a população do país B.`);
+    </script>
+</body>
+</html>

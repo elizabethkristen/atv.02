@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var num1 = parseInt(prompt("Digite o primeiro número inteiro:"));
+    var num2 = parseInt(prompt("Digite o segundo número inteiro:"));
+    var menor = num1 < num2 ? num1 : num2;
+    var maior = num1 > num2 ? num1 : num2;
+    var intervalo = [];
+    
+    for (var i = menor; i <= maior; i++) {
+    intervalo.push(i);
+}
+    alert("Os números inteiros entre " + menor + " e " + maior + " são: " + intervalo.join(", "));
+    </script>
+</body>
+</html>

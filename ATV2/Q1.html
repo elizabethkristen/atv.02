@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let n = parseInt(prompt("Digite uma nota entre 0 e 10:"));
+    while (n < 0 || n > 10) {
+    alert("Valor inválido.");
+    n = parseInt(prompt("Digite uma nota entre 0 e 10:"));
+} 
+    if (n >= 0 || n <= 10) {
+    alert(`Obrigado por atribuir a nota ${n}! `);
+}
+</script>
+</body>
+</html>
